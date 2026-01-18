@@ -180,3 +180,5 @@ ENV/
 ehthumbs.db
 Thumbs.db
 !/02-tensor_attribute.py
+
+.idea
