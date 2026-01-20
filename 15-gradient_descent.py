@@ -22,6 +22,7 @@ for epoch in range(20):
     PyTorch 会把它视作标量，允许你直接运行 .backward()。
     
     """
+    print("output:", output,output.item())
 
     loss = (output - target) ** 2  # 平方误差
 
