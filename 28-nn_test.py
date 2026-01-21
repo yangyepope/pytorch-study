@@ -76,3 +76,10 @@ if __name__ == "__main__":
     # 查看state_dict()方法
     print("=========state_dict=========")
     print(model.state_dict())
+
+
+    # 使用torchsummary查看模型摘要,架构和参数数量
+    from torchsummary import summary
+
+    print("=========model summary=========")
+    summary(model, input_size=(3, ), batch_size=10, device=device)
